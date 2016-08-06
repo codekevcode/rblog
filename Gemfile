@@ -49,3 +49,4 @@ gem 'bootstrap', '~> 4.0.0.alpha3.1'
 gem "autoprefixer-rails"
 gem 'mail_form'
 gem 'simple_form'
+gem 'will_paginate', '~> 3.0'

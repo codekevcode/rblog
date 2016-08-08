@@ -1,3 +1,9 @@
+<script>
+  $(function() {
+    $('textarea#froala-editor').froalaEditor()
+  });
+</script>
+
 <%= form_for [:admin, @post] do |f|  %>
 <!-- check for errors -->
     <%if @post.errors.any? %>
@@ -41,7 +47,7 @@
         <div class="form-group row">
         <div class="col-xs-10">
         <%= f.label :body %>
-            <%= f.text_area :body, class: 'form-control' %>
+            <%= f.text_area :body, class: 'form-control',%>
         </div>
     </div>
     </div>

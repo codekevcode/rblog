@@ -31,6 +31,9 @@
         <div class="col-xs-10">
             <%= f.file_field :image %>
         </div>
+   
+        <%= image_tag(@post.image.url,width:'100%') %>
+    
     </div>
     <div class="form-group row">
         <%= f.label :tags %>

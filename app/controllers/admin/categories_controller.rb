@@ -36,7 +36,7 @@ class Admin::CategoriesController < Admin::ApplicationController
   end
 
   def index
-    @categories = Category.all
+    @categories = Category.all.paginate(:per_page => 2, :page => params[:page])
   end
 
   def show
